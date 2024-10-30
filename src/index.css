@@ -1,0 +1,269 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  /* overflow: hidden; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.container{
+  text-align: center;
+  display: flex;
+  
+  /* flex-direction: column; */
+  
+  
+}
+.row{
+  display: flex;
+  /* flex-direction: ; */
+  /* width: 1000px; */
+}
+.col{
+  
+  display: flex;
+  flex-direction: column;
+}
+.postCompA{
+  margin-top: 10px;
+  /* width: 200px; */
+  margin-right: 20px;
+  flex-direction: column;
+}
+.postCompB{
+  margin-top: 10px;
+  /* width: 200px; */
+  margin-right: 20px;
+  flex-direction: column;
+}.postCompC{
+  /* width: 200px; */
+  margin-left: 5px;
+  flex-direction: column;
+}
+.main{
+flex-wrap: nowrap;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap !important;
+/* overflow: hidden; */
+  -webkit-box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
+-moz-box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
+box-shadow: 2px -5px 41px 0px rgba(0,0,0,0.77);
+  background-color: rgb(254, 250, 250);
+  width: 300px;
+  /* height: 500px !important; */
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.header{
+  background-color: rgb(69, 69, 240);
+  color: white;
+  height: auto;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profileImg{
+  height: auto;
+  display: flex;
+  
+}
+.profileName{
+  margin-top: 20px;
+  margin-left: 5px;
+  font-weight: 500;
+  color: white;
+}
+.profileName span{
+  font-size: 13px;
+  color: rgb(221, 220, 220) !important;
+  font-weight: 400 !important;
+}
+.profileIcon{
+  height: auto;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.profileImg img{
+  background-color: white;
+  border-radius: 50px;
+  width: 80px
+}
+.iconFooter{
+  height: auto;
+  color: rgb(99, 94, 94);
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 25px;
+  margin-top: 10px;
+  /* background-color: #535bf2; */
+}
+
+
+.likeIcon{
+  padding: 0px;
+}
+.likeIcon :hover{
+background-color: blue;
+border-radius: 30px;
+color: white;
+cursor: pointer;
+padding: 5px;
+}
+.chatIcon{
+  padding: 0px;
+}
+.chatIcon :hover{
+  background-color: rgb(38, 38, 38);
+border-radius: 30px;
+color: white;
+cursor: pointer;
+padding: 5px;
+}
+.shareIcon{
+
+  padding: 0px !important;
+}
+.shareIcon :hover{
+  background-color: rgb(188, 32, 5);
+border-radius: 30px;
+color: white;
+cursor: pointer;
+padding: 5px;
+}
+
+.postImg img{
+  height: 250px;
+  width: 300px;
+}
+.comment{
+  height: auto;
+  /* border-bottom: 1px solid black; */
+  /* border-top: 1px solid black; */
+  /* border: 1px solid black; */
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+padding: 10px;
+  color: white;
+  border-radius: 20px;
+  /* font-weight: bold; */
+  font-size: 12px;
+  background-color: rgb(69, 69, 240);
+  
+}
+.commentCont{
+  margin-top: 7px;
+  font-size: 10px !important;
+}
+.hello{
+  font-size: 11px;
+}
+.commentIcon span{
+  padding: 0px 2px;
+  /* color: white; */
+}
+.iconc{
+  
+  font-size: 18px !important;
+  padding-left: 2px !important;
+  
+  
+}
+.heart{
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  padding: 3px !important;
+  padding-bottom: 0px !important;
+}
+.likeC{
+  background-color: blue;
+  margin-left: 3px;
+  color: white;
+  border-radius: 10px;
+  padding: 3px !important;
+  padding-bottom: 0px !important;
+}
+.smile{
+  background-color: yellow;
+  margin-left: 3px;
+  color: black !important;
+  border-radius: 10px;
+  padding: 3px !important;
+  padding-bottom: 0px !important;
+}
